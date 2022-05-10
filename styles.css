@@ -1,0 +1,84 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.mid-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 1rem;
+	max-width: 300px;
+	max-height: 250px;
+}
+
+img {
+	max-width: fit-content;
+	align-self: flex-end;
+}
+
+article {
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	box-shadow: 4px 4px gray;
+	border: 1px white solid;
+	height: 10rem;
+}
+
+.supervisor {
+	border-top: 4px hsl(180, 62%, 55%) solid;
+}
+
+.team-building {
+	border-top: 4px hsl(0, 78%, 62%) solid;
+}
+
+.karma {
+	border-top: 4px hsl(34, 97%, 64%) solid;
+}
+
+.calculator {
+	border-top: 4px hsl(212, 86%, 64%) solid;
+}
+
+.heading {
+	padding-bottom : 1rem;
+	font-weight: 400;
+	font-size: large;
+}
+
+.content {
+	font-weight: 200;
+	font-size: small;
+}
+
+
+@media screen and (max-width: 880px){
+	main {
+		flex-direction: column;
+	}
+}
